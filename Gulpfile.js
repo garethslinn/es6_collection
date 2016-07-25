@@ -1,5 +1,4 @@
 var gulp = require('gulp');
-//var watch = require('gulp-watch');
 var babel = require('gulp-babel');
 
 gulp.task('default', function() {
@@ -10,11 +9,3 @@ gulp.task('default', function() {
         .pipe(gulp.dest('dist'));
 });
 
-/*
-gulp.task('watch', function () {
-    gulp.watch('app/*.js', ['default'])
-});
-
-gulp.task('default', ['watch']);
-
-    */
