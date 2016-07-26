@@ -2,7 +2,13 @@
 
 var arr = [1, 2, 3];
 
-arr[Symbol];
+arr[Symbol.iterator] = function () {
+    return {
+        next: function next() {
+            return {};
+        }
+    };
+};
 
 var it = arr[Symbol.iterator]();
 
