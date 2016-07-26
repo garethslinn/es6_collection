@@ -14,7 +14,13 @@ class Xperson extends Person {
         this.age = age;
     }
 
+    superGreet() {
+        super.greet(); // calls parent function
+    }
+
 }
 
 let xperson = new Xperson(100);
+
 xperson.greet();
+xperson.superGreet();
