@@ -1,6 +1,14 @@
 let arr = [1,2,3];
 
-arr[Symbol]
+arr[Symbol.iterator] = function() {
+    return {
+        next: function() {
+            return {
+
+            }
+        }
+    }
+}
 
 let it = arr[Symbol.iterator]();
 
