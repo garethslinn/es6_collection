@@ -5,8 +5,8 @@ var obj = {
     age: 100
 };
 
-var FirstName = obj.name;
-var age = obj.age;
+var FirstName = obj.name,
+    age = obj.age;
 
 
 console.log(FirstName, age);

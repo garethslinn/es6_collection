@@ -33,7 +33,7 @@ var Xperson = function (_Person) {
     function Xperson(age) {
         _classCallCheck(this, Xperson);
 
-        var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(Xperson).call(this, 'Gareth'));
+        var _this = _possibleConstructorReturn(this, (Xperson.__proto__ || Object.getPrototypeOf(Xperson)).call(this, 'Gareth'));
 
         _this.age = age;
         return _this;
@@ -42,7 +42,7 @@ var Xperson = function (_Person) {
     _createClass(Xperson, [{
         key: 'superGreet',
         value: function superGreet() {
-            _get(Object.getPrototypeOf(Xperson.prototype), 'greet', this).call(this); // calls parent function
+            _get(Xperson.prototype.__proto__ || Object.getPrototypeOf(Xperson.prototype), 'greet', this).call(this); // calls parent function
         }
     }]);
 

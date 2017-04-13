@@ -9,9 +9,17 @@
     "gulp": "^3.9.1",
     "gulp-watch": "^4.3.9"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp-jshint": "^2.0.4",
+    "gulp-run-command": "0.0.7",
+    "gulp-watch": "^4.3.11",
+    "jshint": "^2.9.4",
+    "lite-server": "^2.3.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
   },
   "repository": {
     "type": "git",

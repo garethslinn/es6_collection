@@ -14,7 +14,7 @@ var ConvertableArray = function (_Array) {
     function ConvertableArray() {
         _classCallCheck(this, ConvertableArray);
 
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(ConvertableArray).apply(this, arguments));
+        return _possibleConstructorReturn(this, (ConvertableArray.__proto__ || Object.getPrototypeOf(ConvertableArray)).apply(this, arguments));
     }
 
     _createClass(ConvertableArray, [{

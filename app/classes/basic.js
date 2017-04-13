@@ -11,3 +11,5 @@ class Person {
 let person = new Person('Slinn');
 
 person.greet();
+
+
