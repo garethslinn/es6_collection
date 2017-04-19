@@ -13,7 +13,16 @@ class Todo {
 
   this.todos = {
     title: 'this is a title',
-    todo: ['a','b']
+    todo: [
+      {
+        id: 0,
+        item: 'a'
+      },
+      {
+        id: 1,
+        item: 'b'
+      }
+    ]
   };
 
     this.setup();
@@ -40,6 +49,10 @@ class Todo {
     this.destroy();
 
     const  {title,todo} = this.todos;
+    let i = 0;
+
+    console.log(this.todos);
+
     var html = `
     <this.todos>
       <header>
@@ -47,8 +60,8 @@ class Todo {
       </header>
       <section>
         <ul id="items">
-          ${todo.map(todo => `<li data-id="${todo}">${todo}</li><a class="remove" 
-onclick="console.log( todo )" href="#">X</a>`).join('\n')} 
+          ${todo.map(todo => `<li data-id="${todo.id}">${todo.item}</li><a class="remove" 
+onclick="this.destroy(${todo.id})" href="#">X</a>`).join('\n')} 
         </ul>
       </section>
     </this.todos>
@@ -61,10 +74,12 @@ onclick="console.log( todo )" href="#">X</a>`).join('\n')}
 
   }
 
-  remove() {
-    console.log('num')
+  remove(num) {
+    alert('remove');
+    this.destory();
+    //console.log('num');
     //this.todos.todo.splice(num, 1);
-
+    //this.render();
 
   }
 

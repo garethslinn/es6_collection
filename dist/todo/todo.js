@@ -54,6 +54,10 @@ var Todo = function () {
           title = _todos.title,
           todo = _todos.todo;
 
+      var i = 0;
+
+      console.log(this.todos);
+
       var html = "\n    <this.todos>\n      <header>\n        <h2>" + title + "</h2>\n      </header>\n      <section>\n        <ul id=\"items\">\n          " + todo.map(function (todo) {
         return "<li data-id=\"" + todo + "\">" + todo + "</li><a class=\"remove\" \nonclick=\"console.log( todo )\" href=\"#\">X</a>";
       }).join('\n') + " \n        </ul>\n      </section>\n    </this.todos>\n    ";
